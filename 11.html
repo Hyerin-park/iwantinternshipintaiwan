@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+  <title>朴惠玲_关于我</title>
+  <meta charset="utf-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Zhi+Mang+Xing&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Zhi+Mang+Xing&display=swap');
+
+  .top{
+    font-size: 50px;
+    text-align:center;
+    font-family: 'Zhi Mang Xing', cursive;
+    color: black;
+    display: inline-block;
+  }
+  .top2 {
+    font-size: 20px;
+    text-align:center;
+    display:inline-block;
+    color:black;
+    font-family: 'Zhi Mang Xing', cursive;
+    position: relative;
+  }
+  body {
+    background-color: white;
+    font-family: 'Ma Shan Zheng', cursive;
+    text-align: center;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 200px;
+    text-align: Center;
+    border: 5px solid black;
+    padding:40px;
+    margin:22px;
+    display: inline-block;
+
+  }
+  .title {
+    font-weight: 50px;
+    font-family: 'Ma Shan Zheng', cursive;
+    color:black;
+
+  }
+  h2 {
+    display: inline-block;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 35px;
+    transform: rotate(90deg);
+    transform-origin: left;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: -1px;
+    position:relative;
+  }
+
+  .introduction {
+    position: absolute;
+    display: inline-block;
+    left: 350px;
+    top:200px;
+    font-size:20px;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-weight: 300px;
+  }
+  .name{
+    color: black;
+  }
+
+  iframe {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-spacing: 3px;
+  }
+  .menu {
+    list-style:none;
+    overflow: hidden;
+    background-color: #FBB552;
+    padding: 5px;
+  }
+
+  .menu li{
+    float: left;
+    display: inline-block;
+  }
+  .menu li a{
+      display: block;
+      text-align:left;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+  }
+  .menu li a:hover {
+    background-color: #FAD874;
+  }
+  .dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #DF9D03;
+    min-width: 100px;
+    z-index:2;
+    list-style: none;
+    padding:5px;
+  }
+  .dropdown_content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #DF9D03;
+  }
+  .dropdown_content a:hover {
+    background-color: black;
+  }
+
+  .menu li:hover .dropdown_content {
+    display: block;
+  }
+
+  .vertical-menu {
+    list-style:none;
+    overflow:hidden;
+    background-color: #FAD874;
+    display:inline-block;
+    margin-top: 50px;
+    display:relative;
+    padding: 5px;
+    width: 150px;
+    position:fixed;
+    top:115px;
+    left:15px;
+    overflow: auto;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  .vertical-menu a{
+    padding:20px;
+    background-color: #FBB552;
+  }
+  .vertical-menu li a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: white
+  }
+  .vertical-menu li a:hover {
+    background-color: #FAD874;
+  }
+  .vertical-dropdown{
+    display: none;
+    background-color: #DF9D03;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+  }
+  .vertical-active{
+    display: block;
+    background-color: orange;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+  }
+  .vertical-active a{
+    background-color: #DF9D03;
+  }
+  .vertical-dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #DF9D03;
+  }
+
+  .vertical-menu li:hover .vertical-dropdown {
+    display: block
+}
+  .subtitle {
+    color: black;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 37px;
+    display: inline-block;
+    border: 7px dashed #DF9D03;
+    background-color: none;
+    padding-left:300px;
+    padding-right:300px;
+    z-index: 3;
+    margin-left: 200px;
+}
+  .content {
+    position: relative;
+    background-color: none;
+    border: 3px solid #DF9D03;
+    z-index: 2;
+    display: inline-block;
+    max-width: 800px;
+    min-width: 600px;
+    font-weight:400px;
+    text-align: center;
+    margin-left: 200px;
+  }
+  .about {
+    width:600px;
+    margin-left: 200px;
+  }
+
+    </style>
+  </head>
+<body>
+  <a href="index.html" class="top" style="text-decoration:none">简历</a>
+  <div class="top2">:我想在台湾工作</div>
+    <ul class="menu">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="11.html">关于</a>
+        </li>
+      <li><a href="3.html">活动</a>
+        <ul class="dropdown_content">
+          <li><a href="31.html">专业</a><li>
+          <li><a href="32.html">语言</a><li>
+          <li><a href="33.html">兴趣</a><li>
+          </ul></li>
+      <li><a href="4.html">联系</a></li>
+    </ul>
+
+  <h1 class="subtitle"> 关于我</h1>
+
+
+<div class="content">
+<span class="text">
+您好！我叫朴惠玲。
+<p>
+  1. 为什么我制造了这个网站？</p>
+  <p>
+  最近我找个在台湾的工作机会。这是因为我上次在台湾体验了交换学生的生活以后，我对台湾的企业很有兴趣。根据台湾朋友们的话和台湾新闻，台湾是积极的支持中小企业的国家。这是台湾的中小企业比其他国家的强的理由。所以我愿意在台湾的企业一边能学台湾中小企业的文化，一边造成台湾公司跟韩国的公司之间的交流关系。</p>
+<p>
+  2. 我照着如何工作？ </p>
+<p>
+  因为我的专业是经营管理，我在大学学了Sales、 Marketing、 Accounting、 Finance等。我最有兴趣的领域是Sales和Marketing,然后因为对国际贸易也有兴趣所以最近考了国际贸易专家证书考试，还在等待考试结果。所以我希望会找个跟Sale、Marketing、International Trade或者是跟经营管理有关系的职业。</p>
+<p>3. 为什么您要雇佣我？</p>
+  <p>我相信目前的企业为了发展自己一定要跟外国公司或是外国的客人交流。因为我会讲韩文、英文、中文，所以我再交流方面上会帮您的公司跟他们比较容易地沟通</p>
+  <p>而且我是很友好、很有责任感的人。这就是说，如果您雇佣我的话，您不必担心我跟客人、同事的关系，也不必担心我工作的太敷衍。</p>
+
+ </span></div>
+
+  <ul class="vertical-menu">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="11.html">关于我</a>
+      </li>
+    <li><a href="3.html">活动</a>
+      <ul class="vertical-dropdown">
+        <li><a href="31.html">专业</a><li>
+        <li><a href="32.html">语言</a><li>
+        <li><a href="33.html">兴趣</a><li>
+        </ul></li>
+    <li><a href="4.html">联络</a></li>
+  </ul>
+
+</body>
+</html>

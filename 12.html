@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+  <title>HYERIN PARK_Who am I?</title>
+  <meta charset="utf-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+  .top{
+    font-size: 50px;
+    text-align:center;
+    font-family: 'Reenie Beanie', cursive;
+    color: black;
+    display: inline-block;
+  }
+  .top2 {
+    font-size: 15px;
+    text-align:center;
+    display:inline-block;
+    color:black;
+    font-family:'Courgette', cursive;
+    position: relative;
+  }
+  body {
+    background-color: white;
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-size: 160px;
+    text-align: Center;
+    border: 5px solid black;
+    padding:22px;
+    margin:22px;
+    display: inline-block;
+
+  }
+  .title {
+    font-weight: 30px;
+    font-family: 'Reenie Beanie', cursive;
+    color:black;
+
+  }
+
+
+  .introduction {
+    position: absolute;
+    display: inline-block;
+    left: 350px;
+    top:200px;
+    font-size:20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300px;
+  }
+  .name{
+    color: black;
+  }
+
+  iframe {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-spacing: 3px;
+  }
+  .menu {
+    list-style:none;
+    overflow: hidden;
+    background-color: #FBB552;
+    padding: 5px;
+  }
+
+  .menu li{
+    float: left;
+    display: inline-block;
+  }
+  .menu li a{
+      display: block;
+      text-align:left;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+  }
+  .menu li a:hover {
+    background-color: #FAD874;
+  }
+  .dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #DF9D03;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    padding:5px;
+    z-index: 2;
+  }
+  .dropdown_content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #DF9D03;
+  }
+  .dropdown_content a:hover {
+    background-color: black;
+  }
+
+  .menu li:hover .dropdown_content {
+    display: block;
+  }
+
+  .vertical-menu {
+    list-style:none;
+    overflow:hidden;
+    background-color: #FAD874;
+    display:inline-block;
+    margin-top: 50px;
+    display:relative;
+    padding: 5px;
+    width: 150px;
+    position:fixed;
+    top:115px;
+    left:15px;
+    overflow: auto;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  .vertical-menu a{
+    padding:20px;
+    background-color: #FBB552;
+  }
+  .vertical-menu li a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: white
+  }
+  .vertical-menu li a:hover {
+    background-color: #FAD874;
+  }
+  .vertical-dropdown{
+    display: none;
+    background-color: #DF9D03;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+  }
+  .vertical-active{
+    display: block;
+    background-color: orange;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+  }
+  .vertical-active a{
+    background-color: #DF9D03;
+  }
+  .vertical-dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #DF9D03;
+  }
+
+  .vertical-menu li:hover .vertical-dropdown {
+    display: block
+}
+  .subtitle {
+    color: black;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 37px;
+    display: inline-block;
+    border: 7px dashed #DF9D03;
+    background-color: none;
+    padding-left:300px;
+    padding-right:300px;
+    z-index: 3;
+    margin-left: 200px;
+}
+  .content {
+    position: relative;
+    background-color: none;
+    border: 3px solid #DF9D03;
+    z-index: 2;
+    display: inline-block;
+    width: 800px;
+    font-weight:400px;
+    margin-left: 200px;
+    text-align: center;
+  }
+
+
+  .content details summary h2 {
+    display: inline-block;
+    border: 3px solid #DF9D03;
+    border-radius: 20px/20px;
+    margin: 10px;
+    background-color: #FAD874;
+    text-decoration: none;
+    color: black;
+    padding-left: 150px;
+    padding-right:150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .content details ol {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 50px
+  }
+  .text {
+    margin: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 300px;
+    font-size: 15px;
+    vertical-align: top;
+    margin-top: 30px;
+  }
+  img {
+    display: inline-block;
+    width: 350px;
+    border: 3px solid #DF9D03;
+    margin-top: 20px;
+  }
+  .list-1 {
+    display: inline-block;
+    float:left;
+    font-weight: bold;
+  }
+
+    </style>
+</head>
+<body>
+<a href="index.html" class="top" style="text-decoration:none">CV</a>
+<div class="top2">:course of life; curso de vida.</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="1.html">About</a>
+      <ul class="dropdown_content">
+        <li><a href="11.html">About me</a><li>
+        <li><a href="12.html">Me now</a><li>
+        </ul></li>
+    <li><a href="2.html">News</a>
+      <ul class="dropdown_content">
+        <li><a href="21.html">Article</a><li>
+        <li><a href="22.html">Book</a>
+        </ul></li>
+    <li><a href="3.html">Activity</a>
+      <ul class="dropdown_content">
+        <li><a href="31.html">Language</a><li>
+        <li><a href="32.html">Economy</a><li>
+        <li><a href="33.html">Technology</a><li>
+        </ul></li>
+    <li><a href="4.html">Contact</a></li>
+  </ul>
+
+<h1 class="subtitle">ME NOW</h1>
+<div class="content">
+updated on 16 April, 2020
+  <details>
+  <summary><h2>What do I like?</h2></summary>
+<ol class="list-1">
+  <li>Drawing (Illustration etc)</li>
+  <li>Hanging out with best friends and family</li>
+  <li>Writing poems</li>
+  <li>Dancing and singing</li>
+  <li>Acoustic music</li>
+  <li>Seafood</li>
+  <li>LGBT movies</li>
+  <li>Dogs</li>
+  <li>Foreign languages</li>
+</ol>
+<ol class="list-1" start="10">
+  <li>Chinese cuisine</li>
+  <li>What if games</li>
+  <li>Nasty talk with girls</li>
+  <li>Yellow (pastel tone)</li>
+  <li>Math </li>
+  <li>Web cartoons</li>
+  <li>My boyfriend</li>
+  <li>Walking along the riverside</li>
+</ol>
+</details>
+  <details>
+  <summary><h2>What do I do?</h2></summary>
+ <ol>
+  <details><summary><li><strong><u>LANGUAGE</u></strong></li></summary>
+    <p>Thesedays, I'm studying Chinese. How China has been developed and changed was so impressive to all the people including me. The process of development in China was so much different from what I've thought as general model of deveopment model. Also, it is so hard for me to anticipate the future of China. But ironically this is how I got my interests toward China. As knowing language is the first step to understand the country in my view, I started to study Chinese since several years ago.</p>
+    <img src="language.jpg">
+    <div class="text">Unexpectedly, chinese that I have learned brought me a lot of opportunities to broaden my experience. When I was in Taiwan, I could understand the culture of the country better by communicating with local people in their language. But it was way easier for me to communicate in English than Chinese. </div><p>I was hoping that I could have spoken chinese as local people, because I realized when people were speaking in the language they feel comfortable with, we could speak about the topic more deeply.</p>
+    <p>Now I'm spending my time memorizing chinese words, sentences and studying local way of speaking chinese. I believe this effort will bring me another level of experience in the near future.</p></details>
+  <details><summary><li><strong><u>ECONOMICS</u></strong></li></summary>
+    <img src="economics.jpg"><div class="text">My major in university is 'Business Administration.' One of the most essential factors that affect company is Economy in my view and I think everyone would agree with me in this point. To embody how company is affected and deals with certain economy statement, I started to read Economic essays and solve some economic theoretical problems.</div> <p>Currently I'm reading a book 'Instant economics' which offers overall acknowledge of Economics. With the base of economis that I'm learning from the book, I'm trying to anticipate how economy would be after this Covid19 pandemic and how it will affect companies in South Korea.</p></details>
+  <details><summary><li><strong><u>CODING</u></strong></li></summary>
+    <p>I was trying to find an internship program from Linkedin, and I found myself having a hard time completing my CV. I didn't know what should be written in the CV and what shouldn't, and how I can express myself in pursuasive way. At that time, I didn't have any proof to show what kind of person I am or what I like etc. So, I decided to make my own website not only for expressing who I actually am, but also for the purpose of knowing deeply about myself. Thanks to the function of website, I can put thousands of links to anywhere I want to put more details, upload any type of post such as video, and since it is my own platform, I don't have to worry if I am uploading too much or something just as I do in Instagram or Facebook.(Haha)</p>
+    <p>Basically, I would say this is my portfolio to know myself and show it to people. I'm still on the way of updating it with learning html/css/javascript by Youtube channel "<a href="https://www.youtube.com/user/egoing2">생활코딩."</a> There are a lot of subtitles available, so try this channel if you're also interested in this area.</p>
+    </ol></details>
+  <details>
+  <summary><h2>What am I like?</h2></summary>
+    <video width="320px" controls preload="none"><source src="third.mp4" type="video/mp4"></video> </details>
+ </div>
+
+  <ul class="vertical-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="1.html">About</a>
+      <ul class="vertical-active">
+        <li><a href="11.html">About me</a><li>
+        <li><a href="12.html">Me now</a><li>
+        </ul></li>
+    <li><a href="2.html">News</a>
+      <ul class="vertical-dropdown">
+        <li><a href="21.html">Article</a><li>
+        <li><a href="22.html">Book</a><li>
+        </ul></li>
+    <li><a href="3.html">Activity</a>
+      <ul class="vertical-dropdown">
+        <li><a href="31.html">Language</a><li>
+        <li><a href="32.html">Economy</a><li>
+        <li><a href="33.html">Technology</a><li>
+        </ul></li>
+    <li><a href="4.html">Contact</a></li>
+  </ul>
+
+</body>
+</html>

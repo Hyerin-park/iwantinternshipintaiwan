@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+  <title>HYERIN PARK_Who am I?</title>
+  <meta charset="utf-8">
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+  .top{
+    font-size: 50px;
+    text-align:center;
+    font-family: 'Reenie Beanie', cursive;
+    color: black;
+    display: inline-block;
+  }
+  .top2 {
+    font-size: 15px;
+    text-align:center;
+    display:inline-block;
+    color:black;
+    font-family:'Courgette', cursive;
+    position: relative;
+  }
+  body {
+    background-color: white;
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-size: 160px;
+    text-align: Center;
+    border: 5px solid black;
+    padding:22px;
+    margin:22px;
+    display: inline-block;
+
+  }
+  .title {
+    font-weight: 30px;
+    font-family: 'Reenie Beanie', cursive;
+    color:black;
+
+  }
+  h2 {
+    display: inline-block;
+    font-family: 'Courgette', cursive;
+    font-size: 35px;
+    transform: rotate(90deg);
+    transform-origin: left;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: -1px;
+    position:relative;
+  }
+
+  .introduction {
+    position: absolute;
+    display: inline-block;
+    left: 350px;
+    top:200px;
+    font-size:20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300px;
+  }
+  .name{
+    color: black;
+  }
+
+  iframe {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-spacing: 3px;
+  }
+  .menu {
+    list-style:none;
+    overflow: hidden;
+    background-color: #FBB552;
+    padding: 5px;
+  }
+
+  .menu li{
+    float: left;
+    display: inline-block;
+  }
+  .menu li a{
+      display: block;
+      text-align:left;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+  }
+  .menu li a:hover {
+    background-color: #FAD874;
+  }
+  .dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #DF9D03;
+    min-width: 100px;
+    z-index:2;
+    list-style: none;
+    padding:5px;
+  }
+  .dropdown_content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #DF9D03;
+  }
+  .dropdown_content a:hover {
+    background-color: black;
+  }
+
+  .menu li:hover .dropdown_content {
+    display: block;
+  }
+
+  .vertical-menu {
+    list-style:none;
+    overflow:hidden;
+    background-color: #FAD874;
+    display:inline-block;
+    margin-top: 50px;
+    display:relative;
+    padding: 5px;
+    width: 150px;
+    position:fixed;
+    top:115px;
+    left:15px;
+    overflow: auto;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  .vertical-menu a{
+    padding:20px;
+    background-color: #FBB552;
+  }
+  .vertical-menu li a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: white
+  }
+  .vertical-menu li a:hover {
+    background-color: #FAD874;
+  }
+  .vertical-dropdown{
+    display: none;
+    background-color: #DF9D03;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+  }
+  .vertical-active{
+    display: block;
+    background-color: orange;
+    min-width: 100px;
+    z-index:1;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+  }
+  .vertical-active a{
+    background-color: #DF9D03;
+  }
+  .vertical-dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #DF9D03;
+  }
+
+  .vertical-menu li:hover .vertical-dropdown {
+    display: block
+}
+  .subtitle {
+    color: black;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 37px;
+    display: inline-block;
+    border: 7px dashed #DF9D03;
+    background-color: none;
+    padding-left:300px;
+    padding-right:300px;
+    z-index: 3;
+    margin-left: 200px;
+}
+  .content {
+    position: relative;
+    background-color: none;
+    border: 3px solid #DF9D03;
+    z-index: 2;
+    display: inline-block;
+    max-width: 800px;
+    min-width: 600px;
+    font-weight:400px;
+    text-align: center;
+    margin-left: 200px;
+  }
+  .about {
+    width:600px;
+    margin-left: 200px;
+  }
+
+    </style>
+</head>
+<body>
+<a href="index.html" class="top" style="text-decoration:none">CV</a>
+<div class="top2">:course of life; curso de vida.</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="1.html">About</a>
+      <ul class="dropdown_content">
+        <li><a href="11.html">About me</a><li>
+        <li><a href="12.html">Me now</a><li>
+        </ul></li>
+    <li><a href="2.html">News</a>
+      <ul class="dropdown_content">
+        <li><a href="21.html">Article</a><li>
+        <li><a href="22.html">Book</a>
+        </ul></li>
+    <li><a href="3.html">Activity</a>
+      <ul class="dropdown_content">
+        <li><a href="31.html">Language</a><li>
+        <li><a href="32.html">Economy</a><li>
+        <li><a href="33.html">Technology</a><li>
+        </ul></li>
+    <li><a href="4.html">Contact</a></li>
+  </ul>
+
+<h1 class="subtitle">ARTICLE</h1>
+
+
+  <ul class="vertical-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="1.html">About</a>
+      <ul class="vertical-dropdown">
+        <li><a href="11.html">About me</a><li>
+        <li><a href="12.html">Me now</a><li>
+        </ul></li>
+    <li><a href="2.html">News</a>
+      <ul class="vertical-active">
+        <li><a href="21.html">Article</a><li>
+        <li><a href="22.html">Book</a><li>
+        </ul></li>
+    <li><a href="3.html">Activity</a>
+      <ul class="vertical-dropdown">
+        <li><a href="31.html">Language</a><li>
+        <li><a href="32.html">Economy</a><li>
+        <li><a href="33.html">Technology</a><li>
+        </ul></li>
+    <li><a href="4.html">Contact</a></li>
+  </ul>
+
+</body>
+</html>
